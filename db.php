@@ -29,3 +29,9 @@ $products = [
     new Accessory('#2002', 'Holiday Cat Hoodie', 'Merry & Bright', 'https://s7d2.scene7.com/is/image/PetSmart/5332801?$CLEARjpg$', 16.99, $cats_category, 'Small', 'Red')
   ]
 ];
+
+// TEST DISABLED BUTTONS BUY
+$products["Toys"][2]->set_availabilty(false);
+$products["Foods"][0]->set_availabilty(false);
+$products["Foods"][1]->set_availabilty(false);
+$products["Accessories"][2]->set_availabilty(false);

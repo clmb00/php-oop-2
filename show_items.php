@@ -25,8 +25,8 @@
                 <?php if(isset($product->color)){ echo "<li class='list-group-item'> $product->color </li>"; } ?>
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">Buy</a>
-                <a href="#" class="card-link">Add Favourite</a>
+                <button type="button" class="btn btn-primary" <?php if(!($product->get_availabilty())) echo "disabled"; ?>>Buy</button>
+                <button type="button" class="btn btn-outline-primary">Add Favourite</button>
               </div>
             </div>
           </div>
