@@ -8,14 +8,14 @@ class Product{
   public $image;
   public $price;
   public $category;
-  public $is_available = True;
+  protected $is_available = True;
 
   /**
    * @param String $_id [#0xxx Toys] [#1xxx Foods] [#2xxx Accessories]
    * @param String $_name
    * @param String $_brand
    * @param String $_image url image
-   * @param Number $_price ex. 12.99
+   * @param Float $_price ex. 12.99
    * @param Category $_category
    */
   public function __construct($_id, $_name, $_brand, $_image, $_price, Category $_category)
@@ -26,5 +26,17 @@ class Product{
     $this->image = $_image;
     $this->price = $_price;
     $this->category = $_category;
+  }
+
+  public function set_availabilty($bool){
+    $this->is_available = $bool;
+  }
+
+  public function get_availabilty(){
+    return $this->is_available;
+  }
+
+  public function get_price(){
+    return number_format($this->price,2) . ' &euro;';
   }
 }

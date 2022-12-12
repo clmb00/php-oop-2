@@ -7,7 +7,7 @@ class Category{
 
   /**
    * @param String $_name
-   * @param String $_icon
+   * @param String $_icon url icon
    */
   public function __construct($_name, $_icon)
   {
