@@ -1,9 +1,7 @@
 <?php
 
-$accepted = ["Dogs" => "true", "Cats" => "true", "Fish" => "true"];
-
 if(!empty($_GET)){
-  $accepted = $_GET;
+  $filtered = $_GET;
 }
 
 include_once __DIR__ . '/db.php';

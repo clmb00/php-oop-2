@@ -6,7 +6,7 @@
           <h2 class="fw-bold text-primary"><?php echo $key; ?></h2>
         </div>
         <?php foreach($categories as $product): ?>
-          <?php if(isset($accepted[$product->category->name])): ?>
+          <?php if(empty($_GET) || isset($filtered[$product->category->name])): ?>
             <div class="col-3">
               <div class="card mb-4">
                 <img src="<?php echo $product->image; ?>" class="card-img-top" alt="<?php echo $product->name; ?>">
