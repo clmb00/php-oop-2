@@ -11,7 +11,7 @@ class Product{
   protected $is_available = True;
 
   /**
-   * @param String $_id [#0xxx Toys] [#1xxx Foods] [#2xxx Accessories]
+   * @param String $_id xxxx 0001, 0002,..
    * @param String $_name
    * @param String $_brand
    * @param String $_image url image

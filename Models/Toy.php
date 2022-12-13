@@ -14,5 +14,6 @@ class Toy extends Product{
     $this->feature = $_feature;
 
     parent::__construct($_id, $_name, $_brand, $_image, $_price, $_category);
+    $this->id = '#toy' . $_id;
   }
 }

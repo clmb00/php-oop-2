@@ -14,5 +14,6 @@ class Accessory extends Product{
     $this->color = $_color;
 
     parent::__construct($_id, $_name, $_brand, $_image, $_price, $_category);
+    $this->id = '#access' . $_id;
   }
 }

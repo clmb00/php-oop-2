@@ -8,7 +8,7 @@
         <?php foreach($categories as $product): ?>
           <?php if(empty($_GET) || isset($filtered[$product->category->name])): ?>
             <div class="col-3">
-              <div class="card mb-4">
+              <div class="card mb-4" id="<?php echo $product->id ?>">
                 <img src="<?php echo $product->image; ?>" class="card-img-top" alt="<?php echo $product->name; ?>">
                 <div class="card-body">
                   <h3 class="card-title text-primary"><?php echo $product->name; ?></h3>

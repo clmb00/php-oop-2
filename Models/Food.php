@@ -14,5 +14,6 @@ class Food extends Product{
     $this->flavor = $_flavor;
 
     parent::__construct($_id, $_name, $_brand, $_image, $_price, $_category);
+    $this->id = '#food' . $_id;
   }
 }
